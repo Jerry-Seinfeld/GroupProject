@@ -1,0 +1,649 @@
+body {
+    font-family: 'helvetica', 'sans-serif';
+    margin: 0;
+}
+
+/* start: global style */
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, label, strong {
+    line-height: 2;
+    font-size: 0.85em;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+
+.badge {
+    padding: 9px 20px;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.badge.new {
+    background-color: #FF205F;
+}
+
+.badge.strategy {
+    background-color: #4EAE60;
+}
+
+.badge.racing {
+    background-color: #694EAE;
+}
+
+.badge.rpg,
+.badge.adventure {
+    background-color: #40ABF5;
+}
+
+
+.shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+header {
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid rgb(124, 14, 65);
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid rgb(124, 14, 65);
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: rgb(124, 14, 65);
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: rgb(126, 6, 62);
+}
+
+#swirl-image {
+    background: url('https://images.hdqwalls.com/download/xiaomi-mi-gaming-laptop-stock-4k-nx-1920x1080.jpg') top center no-repeat;
+    height: 820px;
+}
+
+.swirl-text {
+    max-width: 1200px;
+    margin: -30px auto 0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+
+.swirl-text h1 {
+    color: #eee;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.swirl-text span {
+    color: rgb(192, 31, 66);
+}
+
+.swirl-text h2 {
+    color: #eee;
+    font-size: large;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 2.5em;
+    white-space: nowrap;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.swirl-text button {
+    background-color: #FFB320;
+    color: #131313;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 0.85em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+/* end: styles */
+
+/* start: latest news styles */
+#latest-news {
+    margin-bottom: 75px;
+}
+
+#latest-news .flex {
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0;
+}
+
+#latest-news .flex h5 {
+    flex-basis: 25%;
+    background-color: rgb(141, 15, 57);
+    padding: 25px;
+    margin: 0;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+#latest-news-container {
+    background-color: #131313;
+    position: relative;
+    flex-basis: 75%;
+    padding: 25px;
+}
+
+#latest-news-container .btn {
+    margin-right: 20px;
+    color: rgb(3, 2, 2);
+    background-color:rgb(141, 15, 57);
+    border: 1px solid #E92159;
+    padding: 5px; 
+    cursor: pointer;
+}
+
+#latest-news-container .latest-news-text {
+    color: rgb(141, 15, 57);
+}
+
+
+
+#game-types-boxes {
+    margin-bottom: 75px;
+}
+
+#game-types-boxes .box {
+    flex-basis: 25%;
+    position: relative;
+    height: 380px;
+}
+
+.btn2 {
+    border: 1px solid rgb(141, 15, 57);
+    cursor: pointer;
+}
+
+.btn3 {
+    border: 1px solid rgb(141, 15, 57);
+    cursor: pointer;
+}
+
+.btn4 {
+    border: 1px solid rgb(141, 15, 57);
+    cursor: pointer;
+}
+
+.btn5 {
+    border: 1px solid rgb(141, 15, 57);
+    cursor: pointer;
+}
+
+#game-types-boxes .box.new {
+    background: url('https://cdn.vox-cdn.com/thumbor/vE2MohGK_mmLXY7gETzMKbG4j6A=/0x0:2400x1350/1200x800/filters:focal(1008x483:1392x867)/cdn.vox-cdn.com/uploads/chorus_image/image/66216248/AN0JOJ14NMNS1580153151885.0.jpg') top center no-repeat;
+    background-size: cover;
+
+}
+
+#game-types-boxes .box.new2 {
+    background: url('https://images.nintendolife.com/b8d481f398c96/e3.900x.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#game-types-boxes .box.new3 {
+    background: url('https://img5.goodfon.com/wallpaper/nbig/3/35/kiberpank-cyberpunk-2077-videoigra-cyberpunk-cd-projekt-re-2.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#game-types-boxes .box.new4 {
+    background: url('https://cdn.mos.cms.futurecdn.net/bmQvVtVm2drHMtDEbbJLTX.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#game-types-boxes .box .badge {
+    position: relative;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+}
+
+#game-types-boxes .box .contents {
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left: 0;
+    color: #eee;
+    padding: 0 35px 0 25px;
+}
+
+#game-types-boxes .box .contents a {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #999;
+}
+/* end: game types styles */
+
+/* start: recent games styles */
+#recent-games {
+    background: url('https://wallpapermemory.com/uploads/787/minimalist-wallpaper-hd-1920x1080-486346.jpg') top center no-repeat;
+    background-color: #eef2f6;
+    border-top: 1px solid #d6dee7;
+    border-bottom: 1px solid #d6dee7;
+    padding: 70px 0 120px;
+}
+
+#recent-games h1 {
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 rgb(255, 255, 255),
+		1px -1px 0 rgb(255, 251, 251),
+		-1px 1px 0 rgb(255, 255, 255),
+		1px 1px 0 rgb(255, 255, 255);
+}
+
+#recent-games .box {
+    position: relative;
+    flex-basis: 31%;
+    background-color: #fff;
+}
+
+#recent-games .box .badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#recent-games .box img {
+    width: 100%;
+}
+
+#recent-games .box .box-lower-section {
+    padding: 20px;
+}
+
+#recent-games .box .box-lower-section p {
+    color: rgb(0, 0, 0);
+}
+
+#recent-games .box .box-lower-section a {
+    color: #999;
+    font-size: 0.8em;
+}
+
+
+
+#grid {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/footer_bg_pattern.png') 0 0 repeat;
+    padding: 125px 0 105px;
+}
+
+#grid .flex {
+    position: relative;
+}
+
+
+#recent-reviews {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/recent_reviews_bg.png') top right no-repeat;
+    background-size: cover;
+    padding: 75px 0 50px;
+}
+
+#recent-reviews h1 {
+    text-align: center;
+    margin-bottom: 1.65em;
+}
+
+#recent-reviews .box {
+    flex-basis: 23%;
+    position: relative;
+    text-align: center;
+}
+
+#recent-reviews .box .rating-badge {
+    border-radius: 28px;
+    padding: 13px;
+    font-size: 1.1em;
+    color: #eee;
+    font-weight: 600;
+    background-color: #FFB320;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+
+#recent-reviews .box .rating-badge.purple {
+    background-color: #694EAE;
+    cursor: pointer;
+}
+
+#recent-reviews .box .rating-badge.green {
+    background-color: #4EAE60;
+    cursor: pointer;
+}
+
+#recent-reviews .box .rating-badge.violet {
+    background-color: #FF20AE;
+    cursor: pointer;
+}
+
+#recent-reviews .box .recent-reviews-image {
+    margin-bottom: 0.75em;
+    overflow: hidden;
+}
+
+#recent-reviews .box .recent-reviews-image img {
+    width: 100%;
+}
+
+#recent-reviews h4 {
+    color: rgb(0, 0, 0);
+    text-shadow:
+		-1px -1px 0 rgb(255, 255, 255),
+		-1px -1px 0 rgb(255, 255, 255),
+		-1px -1px 0 rgb(255, 255, 255),
+		-1px -1px 0 rgb(255, 255, 255);
+}
+
+#recent-reviews .box p {
+    color: rgb(0, 0, 0);
+    text-shadow:
+		-1px -1px 0 rgb(255, 255, 255),
+		-1px -1px 0 rgb(255, 255, 255),
+		-1px -1px 0 rgb(255, 255, 255),
+		-1px -1px 0 rgb(255, 255, 255);
+}
+
+
+
+#grey-box {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/footer_bg_pattern.png') 0 0 repeat;
+    padding: 75px 0;
+}
+
+footer {
+    background-color: #252525;
+    padding: 25px 0 20px;
+}
+
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a {
+    color: #ddd;
+    font-size: 0.8em;
+}
+
+
+
+@media (max-width: 1200px) {
+    .flex {
+        max-width: 1000px;
+    }
+
+    .latest-news-item {
+        font-size: 0.8em;
+    }
+
+    #tournaments .box .tournaments-content {
+        margin-left: 15px;
+    }
+
+    #tournaments .box .tournaments-content h3 {
+        font-size: 1.4em;
+        margin-bottom: 0.2em;
+    }
+}
+
+@media (max-width: 991px) {
+    .flex {
+        max-width: 720px;
+    }
+
+    nav ul li {
+        margin: 0 12px;
+        font-size: 0.85em;
+    }
+
+    #latest-news .flex h5 {
+        width: 15%;
+    }
+
+    #game-types-boxes .flex {
+        flex-wrap: wrap;
+    }
+
+    #game-types-boxes .box {
+        flex-basis: 50%;
+    }
+
+    #tournaments .box {
+        flex-basis: 42%;
+    }
+
+    #tournaments .box .tournaments-image {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    #tournaments .box .tournaments-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    #recent-reviews {
+        background: none;
+    }
+
+    #recent-reviews .flex {
+        flex-wrap: wrap;
+    }
+
+    #recent-reviews .box {
+        flex-basis: 48%;
+        margin-bottom: 45px;
+    }
+
+    #posts-comments .flex {
+        flex-wrap: wrap;
+    }
+
+    #posts-comments .game-warrior {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    #posts-comments .posts-comments-box {
+        flex-basis: 43%;
+    }
+
+    #posts-comments .game-warrior img.footer-graphic {
+        display: none;
+    }
+
+    footer .flex {
+        flex-wrap: wrap-reverse;
+    }
+
+    footer small {
+        flex-basis: 100%;
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    footer ul {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 0;
+    }
+} /* end 991px */
+
+@media (max-width: 767px) {
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .flex {
+        max-width: 540px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 101%;
+        width: 100%;
+        background-color: #131313;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px 0 15px 20px;
+        border-bottom: 1px solid #FFB320; 
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-top: 2px;
+    }
+
+
+    #latest-news .flex h5 {
+        display: none;
+    }
+
+    #latest-news-container {
+        flex-basis: 100%;
+    }
+
+
+    #recent-reviews .box {
+        flex-basis: 100%;
+    }
+
+    #recent-reviews .box .recent-reviews-image {
+        height: 400px;
+    }
+
+    footer ul li {
+        margin: 0 10px;
+    }
+
+    footer ul li a {
+        font-size: 0.75em;
+    }
+} 
+
+@media (max-width: 400px) {
+    .logo img {
+        width: 150px;
+        margin-top: 2px;
+    }
+
+}
